@@ -1,0 +1,7 @@
+Para conectar PHP con una base de datos Oracle 12c, se necesita tener el driver OCI8 (Oracle Call Interface 8) instalado en el servidor. Una vez instalado, se puede utilizar la función "oci_connect" para conectarse a la base de datos. Ejemplo:
+
+
+$conn = oci_connect('username', 'password', 'hostname/dbname');
+Reemplaza "username", "password" y "hostname/dbname" con los datos de tu conexión.
+
+Es recomendable utilizar una librería como PDO_OCI para tener una mayor flexibilidad y seguridad en las conexiones.
